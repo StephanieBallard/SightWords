@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,56 +15,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="dVk-Ph-Hpr">
-                                <rect key="frame" x="106" y="103" width="216" height="214.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sight Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSG-Qc-wNO">
+                                <rect key="frame" x="20" y="89" width="374" height="120.5"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="55"/>
+                                <color key="textColor" red="0.61960784310000006" green="0.96470588239999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m1h-fa-n81">
+                                <rect key="frame" x="60" y="637" width="294" height="150"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards Left: 100 / 100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbT-pI-cOK">
-                                        <rect key="frame" x="29.5" y="0.0" width="157.5" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="eZP-u6-S9L">
-                                        <rect key="frame" x="18" y="34.5" width="180" height="31"/>
-                                    </slider>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l31-V0-4Pu">
-                                        <rect key="frame" x="65.5" y="78.5" width="85" height="48"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                        <nil key="textColor"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l31-V0-4Pu">
+                                        <rect key="frame" x="66.5" y="0.0" width="161.5" height="84"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
+                                        <color key="textColor" red="0.61960784310000006" green="0.96470588239999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i7S-Tx-XQe">
-                                        <rect key="frame" x="92" y="140.5" width="32" height="30"/>
-                                        <state key="normal" title="Next"/>
+                                        <rect key="frame" x="118.5" y="104" width="57" height="46"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="nextButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="96z-MT-v8L"/>
                                         </connections>
                                     </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ttn-WT-FpQ">
+                                <rect key="frame" x="100" y="359.5" width="214" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards Left: 100 / 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbT-pI-cOK">
+                                        <rect key="frame" x="0.0" y="0.0" width="214" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se5-55-gf0">
-                                        <rect key="frame" x="61" y="184.5" width="94" height="30"/>
-                                        <state key="normal" title="Shuffle Cards"/>
+                                        <rect key="frame" x="0.0" y="48" width="214" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="Shuffle Cards">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <action selector="shuffleButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aQi-Xw-o8W"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="eZP-u6-S9L" firstAttribute="leading" secondItem="dVk-Ph-Hpr" secondAttribute="leading" constant="20" id="AMg-c4-yYP"/>
-                                    <constraint firstAttribute="trailing" secondItem="eZP-u6-S9L" secondAttribute="trailing" constant="20" id="EcW-Dr-4Hn"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.49189319349315069" green="0.51680222602739723" blue="0.99999129772186279" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="dVk-Ph-Hpr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="106" id="4iY-ZZ-hGH"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dVk-Ph-Hpr" secondAttribute="trailing" constant="92" id="GyJ-Ef-udT"/>
-                            <constraint firstItem="dVk-Ph-Hpr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="59" id="cM9-Uo-okS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ttn-WT-FpQ" secondAttribute="trailing" constant="100" id="0w1-Pg-HoW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SSG-Qc-wNO" secondAttribute="trailing" constant="20" id="3Xo-7m-hoM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m1h-fa-n81" secondAttribute="bottom" constant="75" id="5jR-ct-8UT"/>
+                            <constraint firstItem="SSG-Qc-wNO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="Ak6-ej-WCn"/>
+                            <constraint firstItem="ttn-WT-FpQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="LNw-Gu-BXw"/>
+                            <constraint firstItem="ttn-WT-FpQ" firstAttribute="top" secondItem="SSG-Qc-wNO" secondAttribute="bottom" constant="150" id="Umd-qx-0HZ"/>
+                            <constraint firstItem="m1h-fa-n81" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="YaK-8G-Cdj"/>
+                            <constraint firstItem="SSG-Qc-wNO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cWf-v1-5g3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m1h-fa-n81" secondAttribute="trailing" constant="60" id="jxk-6m-WfQ"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cardCountTextLabel" destination="DbT-pI-cOK" id="MnW-Bh-G5m"/>
-                        <outlet property="cardsRemainingSlider" destination="eZP-u6-S9L" id="v4L-GH-tm8"/>
                         <outlet property="wordTextLabel" destination="l31-V0-4Pu" id="VP7-NI-glV"/>
                     </connections>
                 </viewController>
@@ -74,9 +88,4 @@
             <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

@@ -10,8 +10,8 @@ import UIKit
 class SightWordsViewController: UIViewController {
     
     // MARK: - Properties -
-    var words = ["the", "at", "them"]
-//    "and", "mine", "many", "what", "any", "this", "that", "she", "his"
+    var words = ["the", "at", "them", "and", "mine", "many", "what", "any", "this", "that", "she", "his"]
+    
     var index = 0
     
     @IBOutlet weak var cardCountTextLabel: UILabel!
