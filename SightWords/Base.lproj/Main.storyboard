@@ -15,10 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GOs-VN-sMG" customClass="CurveView" customModule="SightWords" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="153" width="414" height="743"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sight Words" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSG-Qc-wNO">
-                                <rect key="frame" x="20" y="89" width="374" height="120.5"/>
+                                <rect key="frame" x="20" y="51" width="374" height="120.5"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="55"/>
-                                <color key="textColor" red="0.61960784310000006" green="0.96470588239999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.54901960780000003" green="0.50588235290000005" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="m1h-fa-n81">
@@ -70,12 +74,19 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ttn-WT-FpQ" secondAttribute="trailing" constant="100" id="0w1-Pg-HoW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SSG-Qc-wNO" secondAttribute="trailing" constant="20" id="3Xo-7m-hoM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="m1h-fa-n81" secondAttribute="bottom" constant="75" id="5jR-ct-8UT"/>
-                            <constraint firstItem="SSG-Qc-wNO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="Ak6-ej-WCn"/>
+                            <constraint firstItem="SSG-Qc-wNO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="Ak6-ej-WCn"/>
+                            <constraint firstItem="GOs-VN-sMG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GNP-Kr-SKR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GOs-VN-sMG" secondAttribute="trailing" id="IaG-fi-GP3"/>
                             <constraint firstItem="ttn-WT-FpQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="LNw-Gu-BXw"/>
-                            <constraint firstItem="ttn-WT-FpQ" firstAttribute="top" secondItem="SSG-Qc-wNO" secondAttribute="bottom" constant="150" id="Umd-qx-0HZ"/>
+                            <constraint firstItem="GOs-VN-sMG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="109" id="Mgt-aw-Iy8"/>
+                            <constraint firstItem="ttn-WT-FpQ" firstAttribute="top" secondItem="SSG-Qc-wNO" secondAttribute="bottom" constant="188" id="Umd-qx-0HZ"/>
                             <constraint firstItem="m1h-fa-n81" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="YaK-8G-Cdj"/>
                             <constraint firstItem="SSG-Qc-wNO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cWf-v1-5g3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GOs-VN-sMG" secondAttribute="bottom" constant="-34" id="dRs-Ry-rhC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="m1h-fa-n81" secondAttribute="trailing" constant="60" id="jxk-6m-WfQ"/>
+                            <constraint firstItem="GOs-VN-sMG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pO5-G8-T5R"/>
+                            <constraint firstItem="GOs-VN-sMG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="xm4-yE-W3N"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GOs-VN-sMG" secondAttribute="bottom" constant="-34" id="zMt-YG-rus"/>
                         </constraints>
                     </view>
                     <connections>

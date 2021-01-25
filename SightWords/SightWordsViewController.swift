@@ -40,6 +40,7 @@ class SightWordsViewController: UIViewController {
     }
     
     func configureUI() {
+        view.backgroundColor = #colorLiteral(red: 0.6196078431, green: 0.9647058824, blue: 1, alpha: 1)
         wordTextLabel.text = words[0]
     }
     

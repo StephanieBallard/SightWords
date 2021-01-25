@@ -15,7 +15,7 @@
 		5A2110B425BC1344009B7EAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A2110B225BC1344009B7EAF /* LaunchScreen.storyboard */; };
 		5A2110BF25BC1344009B7EAF /* SightWordsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2110BE25BC1344009B7EAF /* SightWordsTests.swift */; };
 		5A2110CA25BC1344009B7EAF /* SightWordsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A2110C925BC1344009B7EAF /* SightWordsUITests.swift */; };
-		5AA2E3AC25BC2DB6003C8DAA /* SightWordsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA2E3AB25BC2DB6003C8DAA /* SightWordsCollectionView.swift */; };
+		5AA2E3B625BE4AFF003C8DAA /* CurveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA2E3B525BE4AFF003C8DAA /* CurveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		5A2110C525BC1344009B7EAF /* SightWordsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SightWordsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A2110C925BC1344009B7EAF /* SightWordsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightWordsUITests.swift; sourceTree = "<group>"; };
 		5A2110CB25BC1344009B7EAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5AA2E3AB25BC2DB6003C8DAA /* SightWordsCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SightWordsCollectionView.swift; sourceTree = "<group>"; };
+		5AA2E3B525BE4AFF003C8DAA /* CurveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +105,7 @@
 				5A2110A925BC1342009B7EAF /* SceneDelegate.swift */,
 				5A2110AB25BC1342009B7EAF /* SightWordsViewController.swift */,
 				5A2110AD25BC1342009B7EAF /* Main.storyboard */,
-				5AA2E3AB25BC2DB6003C8DAA /* SightWordsCollectionView.swift */,
+				5AA2E3B525BE4AFF003C8DAA /* CurveView.swift */,
 				5A2110B025BC1344009B7EAF /* Assets.xcassets */,
 				5A2110B225BC1344009B7EAF /* LaunchScreen.storyboard */,
 				5A2110B525BC1344009B7EAF /* Info.plist */,
@@ -263,7 +263,7 @@
 			files = (
 				5A2110AC25BC1342009B7EAF /* SightWordsViewController.swift in Sources */,
 				5A2110A825BC1342009B7EAF /* AppDelegate.swift in Sources */,
-				5AA2E3AC25BC2DB6003C8DAA /* SightWordsCollectionView.swift in Sources */,
+				5AA2E3B625BE4AFF003C8DAA /* CurveView.swift in Sources */,
 				5A2110AA25BC1342009B7EAF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
