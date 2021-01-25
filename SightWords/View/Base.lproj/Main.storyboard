@@ -49,7 +49,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ttn-WT-FpQ">
                                 <rect key="frame" x="100" y="359.5" width="214" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards Left: 100 / 100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbT-pI-cOK">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cards Left: 133 / 133" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbT-pI-cOK">
                                         <rect key="frame" x="0.0" y="0.0" width="214" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -91,6 +91,7 @@
                     </view>
                     <connections>
                         <outlet property="cardCountTextLabel" destination="DbT-pI-cOK" id="MnW-Bh-G5m"/>
+                        <outlet property="nextButton" destination="i7S-Tx-XQe" id="MHJ-1f-o1w"/>
                         <outlet property="wordTextLabel" destination="l31-V0-4Pu" id="VP7-NI-glV"/>
                     </connections>
                 </viewController>
