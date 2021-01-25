@@ -60,7 +60,6 @@ class SightWordsViewController: UIViewController {
         nextButton.layer.borderColor = UIColor.white.cgColor
         nextButton.layer.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
         nextButton.setTitleColor(#colorLiteral(red: 0.5490196078, green: 0.5058823529, blue: 0.9647058824, alpha: 1), for: .normal)
-        nextButton(setDimensions(height: <#T##CGFloat#>, width: <#T##CGFloat#>))
+        nextButton.setDimensions(height: 50, width: 100)
     }
 }
-
